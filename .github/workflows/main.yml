@@ -24,7 +24,7 @@ jobs:
       run: dotnet build ./test-site/test-site.csproj --configuration Release
 
     - name: Publish artifact
-      run: dotnet publish ./test-site/test-site.csproj --configuration Release --ouput ./publish -r win-x64
+      run: dotnet publish ./test-site/test-site.csproj --configuration Release --output ./publish -r win-x64
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2
