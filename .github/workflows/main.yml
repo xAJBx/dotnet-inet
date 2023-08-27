@@ -21,7 +21,7 @@ jobs:
       run: dotnet restore ./test-site/test-site.csproj
 
     - name: Build project
-      run: dotnet build ./test-site/test-site.csproj--configuration Release
+      run: dotnet build ./test-site/test-site.csproj --configuration Release
 
     - name: Publish artifact
       run: dotnet publish ./test-site/test-site.csproj --configuration Release --ouput ./publish -r win-x64
